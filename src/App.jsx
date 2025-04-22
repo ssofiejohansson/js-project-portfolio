@@ -1,8 +1,21 @@
+import { Menu } from "./assets/sections/Menu"
+import { Header } from "./assets/sections/Header"
+import { Projects } from "./assets/sections/Projects"
+import { Skills } from "./assets/sections/Skills"
+import { Footer } from "./assets/sections/Footer"
+
 export const App = () => {
   return (
     <>
-      <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum! Maxime animi nostrum facilis distinctio neque labore consectetur beatae eum ipsum excepturi voluptatum, dicta repellendus incidunt fugiat, consequatur rem aperiam.</p>
+      <Menu />
+      <Header />
+      <main className="mainContent">
+
+        <Projects />
+        <Skills />
+
+      </main>
+      <Footer />
     </>
   )
 }
