@@ -16,6 +16,8 @@ const IconStyling = styled.div`
 
     &:hover {
       color: var(--complementary);
+       transform: scale(1.3); 
+    
     }
   }
 `;
@@ -23,13 +25,28 @@ const IconStyling = styled.div`
 export const Icons = ({ color }) => {
   return (
     <IconStyling color={color}>
-      <a href="https://www.linkedin.com/in/ssofiejohansson" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/ssofiejohansson"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visit my LinkedIn profile"
+      >
         <FontAwesomeIcon icon={faLinkedinIn} />
       </a>
-      <a href="https://github.com/ssofiejohansson" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://github.com/ssofiejohansson"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visit my GitHub profile"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+      <a
+        href="/CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Download my CV"
+      >
         <FontAwesomeIcon icon={faFile} />
       </a>
     </IconStyling>
