@@ -69,7 +69,7 @@ export const Card = () => {
             ))}
           </TagContainer>
 
-          <ProjectImg src={project.image} alt="project-image" />
+          <ProjectImg src={project.image} alt={project.alt} />
           <TagContainer>
             <Tag>{project.collab}</Tag>
           </TagContainer>
