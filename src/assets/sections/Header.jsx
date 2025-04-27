@@ -22,6 +22,7 @@ const HeaderTitle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  text-align: left;
 `;
 
 const HeaderIntro = styled.div`
@@ -67,7 +68,7 @@ export const Header = () => {
     <>
       <HeaderContainer id="about">
         <HeaderTitle>
-          <h1>Creative Frontend Developer</h1>
+          <h1>Frontend Developer</h1>
           <h2>+ former hospitality pro</h2>
         </HeaderTitle>
         <HeaderBio>

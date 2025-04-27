@@ -32,6 +32,23 @@
       "github": "https://github.com/ssofiejohansson/accessibility-sofie-simon"
     },
     {
+      "name": "Portfolio",
+      "info": "A responsive portfolio website designed to showcase my skills and projects. Built with React components and props, featuring a clean, accessible design based on Figma guidelines. Key features include a tech skills section, project links to GitHub and Netlify and styled-components for modular styling.",
+      "image": "./src/assets/sections/img/portfolio.png",
+      "alt": "Portfolio Project",
+      "collab": "Solo project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Styled-components",
+        "JavaScript",
+        "JSON"
+      ],
+      "netlify": "https://ssofiejohansson.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-portfolio"
+    },
+    {
       "name": "Recipe Library",
       "info": "A  web application that helps users discover recipes using dynamic filters and sorting options. Using the Spoonacular API, the app updates in real time as users refine their search, offering a seamless and interactive browsing experience. Key features include multi-filter functionality, a random recipe generator, user feedback when no results are found and interactive step-by-step instructions. To enhance performance and usability, local storage caching, a loading state, and a responsive design were implemented to ensure smooth functionality across all devices.",
       "image": "./src/assets/sections/img/recipe.png",
