@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import profileImage from './img/header-img.png';
 import styled from 'styled-components';
 import { Icons } from './components/Icons';
@@ -63,34 +63,11 @@ export const ProfileImg = styled.img`
 `;
 
 export const Header = () => {
-  const [text, setText] = useState('');
-  const fullText = 'Creative Frontend Developer';
-  const speed = 140;
-
-  useEffect(() => {
-    let i = 0;
-    let timeoutId;
-
-    const typeWriter = () => {
-      if (i < fullText.length) {
-        setText((prev) => prev + fullText.charAt(i));
-        i++;
-        timeoutId = setTimeout(typeWriter, speed);
-      }
-    };
-
-    typeWriter();
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
-
   return (
     <>
       <HeaderContainer id="about">
         <HeaderTitle>
-          <h1>{text}</h1>
+          <h1>Creative Frontend Developer</h1>
           <h2>+ former hospitality pro</h2>
         </HeaderTitle>
         <HeaderBio>

@@ -12,7 +12,7 @@ const IconStyling = styled.div`
   svg {
     color: ${({ color }) => color}; 
     transition: color 0.3s ease; 
-     cursor: pointer;
+    cursor: pointer;
 
     &:hover {
       color: var(--complementary);
@@ -23,9 +23,15 @@ const IconStyling = styled.div`
 export const Icons = ({ color }) => {
   return (
     <IconStyling color={color}>
-      <FontAwesomeIcon icon={faLinkedinIn} />
-      <FontAwesomeIcon icon={faGithub} />
-      <FontAwesomeIcon icon={faFile} />
+      <a href="https://www.linkedin.com/in/ssofiejohansson" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedinIn} />
+      </a>
+      <a href="https://github.com/ssofiejohansson" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+      <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faFile} />
+      </a>
     </IconStyling>
   );
 };
