@@ -1,4 +1,4 @@
-import { Menu } from "./assets/sections/Menu"
+import { Nav } from "./assets/sections/Nav"
 import { Header } from "./assets/sections/Header"
 import { Projects } from "./assets/sections/Projects"
 import { Skills } from "./assets/sections/Skills"
@@ -7,9 +7,9 @@ import { Footer } from "./assets/sections/Footer"
 export const App = () => {
   return (
     <>
-      <Menu />
+      <Nav />
       <Header />
-      <main className="mainContent">
+      <main>
 
         <Projects />
         <Skills />

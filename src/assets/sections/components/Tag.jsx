@@ -1,11 +1,11 @@
-export const Tag = () => {
-  return (
-    <>
-      <h2>Tag 1</h2>
-      <p>Innehåll</p>
-      <h2>Tag 2</h2>
-      <p>Innehåll</p>
+import styled from 'styled-components';
 
-    </>
-  )
-}
+export const Tag = styled.p`
+     color: #333;
+    padding: 1px 6px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #333;
+    background: transparant;
+`

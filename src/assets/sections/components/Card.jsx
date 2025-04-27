@@ -1,62 +1,91 @@
 import ProjectList from '../data/projects.json';
+import styled from 'styled-components';
+import { Button } from './Button';
+import { Tag } from './Tag';
 
 
-console.log(ProjectList);
+const CardContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 10px;
+  flex: 1 1 calc(100% - 40px);
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 400px; 
 
+  @media (min-width: 768px) {
+    flex: 1 1 calc(50% - 40px); 
+  }
+
+  @media (min-width: 1600px) {
+    flex: 1 1 calc(25% - 40px); 
+  }
+`
+
+const ProjectImg = styled.img`
+    width: 100%;
+    opacity: 0.7;
+    border-top: 6px solid #E48162;
+    border-left: 6px solid #E48162;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+    }
+  `
+
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 10px; 
+`
+
+const TagContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  `
+
+const ProjectHeading = styled.h2`
+  font-family: var(--font-family-headings);
+  color: var(--font-primary);
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+  `
 
 export const Card = () => {
   return (
     <>
       {ProjectList.projects.map((project, id) => (
 
+        <CardContainer key={id}>
 
-
-        <section className="cardContainer" key={id}>
-
-          <div className="projectTags">
+          <TagContainer>
             {project.tags.map((tag, index) => (
-              <p key={index} className="tag">{tag}</p>
+              <Tag key={index}>{tag}</Tag>
             ))}
-          </div>
-          <img className="projectImg" src={project.image} alt="project-image" />
-          <p className='tag'>{project.collab}</p>
-          <h2>{project.name} </h2>
+          </TagContainer>
+
+          <ProjectImg src={project.image} alt="project-image" />
+          <TagContainer>
+            <Tag>{project.collab}</Tag>
+          </TagContainer>
+
+          <ProjectHeading> {project.name} </ProjectHeading>
 
           <p>{project.info}</p>
 
-          <div className="projectButtons">
-            <a href={project.netlify} target="_blank" rel="noopener noreferrer" className="button">
-              Live demo
-            </a>
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="button">
-              View code
-            </a>
-          </div>
-        </section>
+          <ButtonContainer>
+
+            <Button href={project.netlify} target="_blank" rel="noopener noreferrer" buttonText="Live Demo" isPrimary={true} />
+            <Button href={project.github} target="_blank" rel="noopener noreferrer" buttonText="View Code" />
+
+          </ButtonContainer>
+        </CardContainer >
 
       ))}
-
-      {/* <section className="cardContainer">
-        <div className="projectTags">
-          <button>TypeScript</button>
-          <button>JavaScript</button>
-          <button>CSS3</button>
-          <button>HTML5</button>
-        </div>
-
-        <img src="." alt="project-image"></img>
-
-        <button>Team project</button>
-        <h2></h2>
-
-        <p>A sleek weather application built with TypeScript, designed to deliver real-time weather updates and a 4-day forecast. It fetches data from the OpenWeather API and presents it through a clean, animated user interface. The app adapts seamlessly to all screen sizes and includes smooth CSS animations that enhance the overall experience without distraction.</p>
-        <div className="projectButtons">
-          <button>Live demo</button>
-          <button>View code</button>
-        </div>
-      </section> */}
-
-
     </>
   )
 }

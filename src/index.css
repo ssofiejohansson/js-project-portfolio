@@ -9,144 +9,96 @@
   --font-family-code: 'Courier New', monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid #000;
-  padding: 20px;
-}
-
-.menu a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
-}
-
-.mainContent {
-  padding: 20px;
-}
-
-
-h2,
-h3 {
-  text-align: center;
-}
-
-/* Header */
-
-.headerContainer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
-  border: #f8f8f8 solid 2px;
-}
-
-.icons {
-  display: flex;
-  gap: 10px;
-}
-
-.icons svg {
-  font-size: 24px;
-  color: #000;
-  cursor: pointer;
-}
-
-/* Projects */
-.projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-  align-content: center;
-
-}
-
-.cardContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  padding: 20px;
-  border: #f8f8f8 solid 2px;
-}
-
-.projectTags,
-.projectButtons {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.projectImg {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  object-fit: cover;
-  border-top: 6px solid #000;
-  border-left: 6px solid #000;
-}
-
-.tag {
-  text-decoration: none;
-  color: #000;
-  padding: 2px 8px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  background-color: transparent;
-}
-
-.button {
-  text-decoration: none;
-  color: #000;
-  padding: 10px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-/* Skills */
-.skillsSection {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-}
-
-.listColumn,
-.listRow {
-  list-style: none;
+  font-family: sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: var(--font-family-text);
+  color: var(--font-secondary);
 }
 
-.listRow {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Footer */
-.footerContainer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+main {
   padding: 20px;
-  border: #f8f8f8 solid 2px;
 }
 
-.footerBio {
-  display: flex;
-  flex-direction: column;
+@media (min-width: 768px) {
+  main {
+    padding: 0px;
+  }
+}
 
+/* Typography styling */
+
+h1 {
+  font-family: var(--font-family-code);
+  color: var(--font-primary);
+  font-size: 50px;
+}
+
+header h2 {
+  font-family: var(--font-family-headings);
+  color: var(--font-primary);
+  font-weight: 200;
+  text-align: left;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: var(--font-family-headings);
+  color: var(--font-primary);
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-family-headings);
+  color: var(--font-primary);
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: var(--font-family-headings);
+  color: var(--font-primary);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.techStack {
+  font-family: var(--font-family-code);
+  color: var(--font-primary);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
 }
