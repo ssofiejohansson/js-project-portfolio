@@ -33,7 +33,7 @@ const NavItem = styled.a`
   text-transform: uppercase;
 
       @media (min-width: 768px) {
-        font-size: 20px;
+        font-size: 18px;
           letter-spacing: 3px;
       }
   &:hover {
