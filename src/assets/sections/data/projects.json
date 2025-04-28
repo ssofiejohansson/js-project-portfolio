@@ -3,7 +3,7 @@
     {
       "name": "Weather app",
       "info": "A sleek weather application built with TypeScript, designed to deliver real-time weather updates and a 4-day forecast. It fetches data from the OpenWeather API and presents it through a clean, animated user interface. The app adapts seamlessly to all screen sizes and includes smooth CSS animations that enhance the overall experience without distraction.",
-      "image": "./img/weather.webp",
+      "image": "./img/heatherweather.webp",
       "alt": "Weather App",
       "collab": "Team project",
       "tags": [
