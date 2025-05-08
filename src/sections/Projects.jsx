@@ -6,6 +6,7 @@ const ProjectsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
   justify-content: center;
   padding: 50px 10px;
 
