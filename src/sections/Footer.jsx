@@ -1,9 +1,9 @@
-import profileImage from './img/footer-img.png';
+import profileImage from '../assets/img/footer-img.png';
 import styled from 'styled-components';
 import { Icons } from './components/Icons';
 import { ProfileImg } from './Header';
 
-const FooterContainer = styled.section`
+const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column-reverse;
   

@@ -1,19 +1,18 @@
-import ProjectList from '../data/projects.json';
+import ProjectList from '../../assets/data/projects.json';
 import styled from 'styled-components';
 import { Button } from './Button';
 import { Tag } from './Tag';
 
 
 
-const CardContainer = styled.section`
+const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 16px 10px;
+  gap: 15px;
+  padding: 10px;
   flex: 1 1 calc(100% - 40px);
   max-width: 400px;
   box-sizing: border-box;
-  margin: 0 auto;
   min-height: 400px; 
 
   @media (min-width: 768px) {
@@ -56,7 +55,7 @@ const ProjectHeading = styled.h2`
   font-weight: 500;
   `
 
-export const Card = () => {
+export const Cards = () => {
   return (
     <>
       {ProjectList.projects.map((project, id) => (

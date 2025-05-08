@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from './img/header-img.png';
+import profileImage from '../assets/img/header-img.png';
 import styled from 'styled-components';
 import { Icons } from './components/Icons';
 
@@ -11,7 +11,7 @@ const HeaderContainer = styled.header`
   padding-top: 100px; 
 
   @media (min-width: 768px) {
-    height: 100vh;
+    height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
   }

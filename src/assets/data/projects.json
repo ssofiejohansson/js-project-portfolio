@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "name": "Happy Thoughts",
+      "info": "Happy Thoughts is a simple messaging app built with React that lets users share short, uplifting messages with the world. It connects to a shared public API, allowing anyone to post and read happy thoughts in real time. Messages appear in reverse chronological order, with the newest thoughts at the top. Each thought displays the message content and a like count, which can be increased by clicking the heart button. The app updates automatically after new thoughts are posted or liked, creating a smooth and interactive user experience.",
+      "image": "./img/happythoughts.webp",
+      "alt": "Happy Thoughts App",
+      "collab": "Team project",
+      "tags": [
+        "JavaScript",
+        "React",
+        "useState",
+        "useEffect",
+        "Styled-components",
+        "JSON"
+      ],
+      "netlify": "https://reliable-truffle-5d0fac.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-happy-thoughts"
+    },
+    {
       "name": "Weather app",
       "info": "A sleek weather application built with TypeScript, designed to deliver real-time weather updates and a 4-day forecast. It fetches data from the OpenWeather API and presents it through a clean, animated user interface. The app adapts seamlessly to all screen sizes and includes smooth CSS animations that enhance the overall experience without distraction.",
       "image": "./img/heatherweather.webp",

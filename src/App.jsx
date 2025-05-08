@@ -1,9 +1,9 @@
-import { Nav } from "./assets/sections/Nav"
-import { Header } from "./assets/sections/Header"
-import { Projects } from "./assets/sections/Projects"
-import { Skills } from "./assets/sections/Skills"
-import { Footer } from "./assets/sections/Footer"
-import { Blog } from "./assets/sections/Blog"
+import { Nav } from "./sections/Nav"
+import { Header } from "./sections/Header"
+import { Projects } from "./sections/Projects"
+import { Skills } from "./sections/Skills"
+import { Footer } from "./sections/Footer"
+import { Blog } from "./sections/Blog"
 
 export const App = () => {
   return (
