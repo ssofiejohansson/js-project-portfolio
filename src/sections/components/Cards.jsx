@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { Button } from './Button';
 import { Tag } from './Tag';
 
-
-
 const CardContainer = styled.article`
   display: flex;
   flex-direction: column;

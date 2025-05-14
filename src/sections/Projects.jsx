@@ -5,13 +5,13 @@ import styled from "styled-components";
 const ProjectsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-
-  justify-content: center;
+  row-gap: 60px; 
+  justify-content: flex-start;
   padding: 50px 10px;
 
   @media (min-width: 768px) {
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 80px;
   }
 `;
 
