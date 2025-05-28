@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "name": "Still not done",
+      "info": "Still Not Done is a to-do app built with React that helps users manage their tasks with ease. It uses Zustand for state management and styled-components for styling, offering a smooth and responsive user experience. Users can add new tasks, mark them as complete, delete them and reorder them in the list. Completed tasks appear in a separate section to keep things organized. The app also uses localStorage so the task list is saved between sessions and remains available even after the browser is closed.",
+      "image": "./img/todo.png",
+      "alt": "To-do App",
+      "collab": "Solo project",
+      "tags": [
+        "JavaScript",
+        "React",
+        "useState",
+        "useEffect",
+        "Styled-components",
+        "Zustand"
+      ],
+      "netlify": "https://stillnotdone.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-todo"
+    },
+    {
       "name": "Happy Thoughts",
       "info": "Happy Thoughts is a simple messaging app built with React that lets users share short, uplifting messages with the world. It connects to a shared public API, allowing anyone to post and read happy thoughts in real time. Messages appear in reverse chronological order, with the newest thoughts at the top. Each thought displays the message content and a like count, which can be increased by clicking the heart button. The app updates automatically after new thoughts are posted or liked, creating a smooth and interactive user experience.",
       "image": "./img/happythoughts.webp",
@@ -32,6 +49,21 @@
       ],
       "netlify": "https://heatherweather.netlify.app/",
       "github": "https://github.com/ssofiejohansson/js-project-weather-app"
+    },
+    {
+      "name": "Movie App",
+      "info": "The Movie App is an app listing movies built with React that lets users browse popular films and discover new releases. It uses React Router for seamless navigation between pages and styled-components for custom styling. Users can click on any movie to view more details, including the release date, synopsis and additional information. Loading states are handled smoothly to enhance the user experience while data is being fetched.",
+      "image": "./img/.webp",
+      "alt": "Movie App",
+      "collab": "Team project",
+      "tags": [
+        "React",
+        "React Router",
+        "JavaScript",
+        "Styled-components"
+      ],
+      "netlify": "https://effervescent-praline-71a88e.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-movies"
     },
     {
       "name": "Online Quiz",
